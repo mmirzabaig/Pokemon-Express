@@ -1,5 +1,10 @@
 const express = require('express');
-const add = express();
+const app = express();
+const Pokemon = require('./models/pokemon');
+
+app.get('/', (req, res) => {
+  res.send(Pokemon);
+});
 
 
 
@@ -12,9 +17,6 @@ const add = express();
 
 
 
-
-
-
-add.listen(3000, () => {
+app.listen(3000, () => {
   console.log('App is LIVE');
 })
