@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>hello</h1>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>hello</h1>
   <%  for ( let i = 0; i < pokemon.length; i++ ) { %>
-      <ul class='pokemon'>
-      <%=  pokemon[i].name; %>
+  <ul class='pokemon'>
+    <%=  pokemon[i].name; %>
     <img src='<%=pokemon[i].img; %>'>
-      </ul>
+    <a href="/pokemon/<%=i%>">Link To Page</a>
+  </ul>
   <%  } %>
 
-  </body>
+</body>
+
 </html>
