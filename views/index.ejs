@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-</head>
+
 
 <body>
   <h1>hello</h1>
@@ -13,6 +13,9 @@
     <%=  pokemon[i].name; %>
     <img src='<%=pokemon[i].img; %>'>
     <a href="/pokemon/<%=i%>">Link To Page</a>
+    <a href="/pokemon/<%=i%>/edit">Edit <%=pokemon[i].name%></a>
+
+
   </ul>
   <%  } %>
 
